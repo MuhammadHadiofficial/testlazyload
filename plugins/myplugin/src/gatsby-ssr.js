@@ -25,14 +25,14 @@ exports.onRenderBody = (
     <script
       key={`gatsby-plugin-freshchat`}
       src={`https://wchat.freshchat.com/js/widget.js`}
-      defer
+      async
     />
   ])
   setPostBodyComponents([
     <script
       key={`gatsby-plugin-freshchat-init`}
       dangerouslySetInnerHTML={{ __html: renderHTML() }}
-      defer
+      async
     />
   ])
 }
